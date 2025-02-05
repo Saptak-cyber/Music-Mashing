@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Mashup Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="spotify-container">
+        <aside class="sidebar">
+            <h2>Song Mashup</h2>
+            <ul>
+                <li>Home</li>
+                <li>Search</li>
+                <li>Your Library</li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <header>
+                <input type="text" id="search" placeholder="Search for a song...">
+                <button onclick="searchTracks()">Search</button>
+            </header>
+            <section id="results-container">
+                <ul id="results"></ul>
+            </section>
+            <footer class="player">
+                <button onclick="generateMashup()">Generate Mashup</button>
+                <audio id="mashupPlayer" controls></audio>
+            </footer>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
